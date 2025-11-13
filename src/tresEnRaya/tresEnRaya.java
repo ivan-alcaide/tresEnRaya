@@ -5,6 +5,7 @@ public class tresEnRaya {
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
 		int opcion;
+		char[][] tablero=new char[3][3];
 		do {
 			
 			mostrarMenu();
@@ -27,14 +28,21 @@ public class tresEnRaya {
 	}
 	public static void mostrarInstrucciones() {
 		
+		
 	}
 	public static void jugar(Scanner sc) {
 		
 	}
-	public static void inicializarTablero() {
+	public static void inicializarTablero(char[][] t) {
+		for(int i=0;i<t.length;i++) {
+			for(int j=0;j<t[i].length;j++) {
+				t[i][j]='-';
+			}
+		}
+		
 		
 	}
-	public static void mostrarTablero() {
+	public static void mostrarTablero(char[][] t) {
 		
 	}
 	public static void hayGanador() {
